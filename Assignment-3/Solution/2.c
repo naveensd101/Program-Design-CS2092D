@@ -27,14 +27,23 @@ int Merge(int a[], int p, int mid, int r)
 	R[n2] = 1009; //sentinal
 
 	int compare = 0;
+	int sizeof_left = n1;
+	// printf("%d\n", sizeof_left);
 	for (int i = p, Lit = 0, Rit = 0; i <= r;)
 	{
-		compare++;
 		if (L[Lit] <= R[Rit])
+		{
 			a[i++] = L[Lit++];
+			sizeof_left--;
+		}
 		else
+		{
 			a[i++] = R[Rit++];
+			// if (sizeof_left > 0)
+			compare += sizeof_left;
+		}
 	}
+	// printf("%d ", compare);
 	return compare;
 }
 
@@ -51,6 +60,7 @@ int MergeSort(int a[], int p, int r)
 
 		compare = Merge(a, p, mid, r);
 	}
+	// printf("%d %d %d\n", compare, compareL, compareR);
 	return (compare + compareL + compareR);
 }
 
