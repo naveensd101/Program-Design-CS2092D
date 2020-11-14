@@ -24,7 +24,7 @@
 5. Assignmnt 5
     1. Heap Sort
     2. Ming Priority Queue using Heap
-    3. Priority Queue implimentation 
+    3. Priority Queue implimentation
 6. Assignment 6
     1. Singly Linked List
     2. Doubly Linked List
