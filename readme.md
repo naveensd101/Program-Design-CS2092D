@@ -41,3 +41,6 @@
     2. Evaluate Postfix and give result
     3. Create Expression tree form postfix
     4. Evaluate postfix with file handling
+9. Assignment 9
+	1. BST 
+	2. BST implimentation
